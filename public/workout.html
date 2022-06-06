@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Run With</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="./home.html"><div><i class="fas fa-home"></i>ホーム</div></a></li>
+        <li class="now"><a href="./workout.html"><div><i class="fas fa-running"></i>走る</div></a></li>
+        <li><a href="./frend.html"><div><i class="fas fa-user-friends"></i>友達</div></a></li>
+        <li><a href="./search.html"><div><i class="fas fa-search-plus"></i>探す</div></a></li>
+    </ul>
+</nav>
+</nav>
+  <header>
+    <h1>Run With</h1>
+  </header>
+  <main>
+    <div class="workout">
+      <div class="start"><p>ワークアウトを開始します</p><img src="img/run_start.jpg"></div>
+      <div class="countdown"></div>
+      <div class="info">
+          <div class="countup"></div>
+          <div class="distance"></div>
+          <div class="lat"></div>
+          <div class="lng"></div>
+          <div class="speed"></div>
+      </div>
+      <div class="control">
+          <a class="dummy-button"></a>
+          <button class="start-button">開始</button>
+          <button class="pause-button">停止</button>
+          <button class="restart-button">再開</button>
+          <button class="end-button">終了</button>
+          <a class="workinput-button" href="./workinput.html">手動入力</a>
+      </div>
+    </div>
+    <div class="workresult">
+      <div class="msg">お疲れさまでした</div>
+      <div class="map"></div>
+      <div class="record">
+        <p><span>走行距離</span><span class="distance"></span></p>
+        <p><span>経過時間</span><span class="time"></span></p>
+        <p><span>平均速度</span><span class="speed"></span></p>
+      </div>
+    </div>
+    
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://unpkg.com/geofirestore/dist/geofirestore.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='https://www.bing.com/api/maps/mapcontrol?mkt=ja-jp&key=AkKAP2GRI4-HJCwtMRR6KPTEIcdjZ7bmoKWJUn_J1ZHmt6rBFrGPYe3obFgiwims'></script>
+  <!-- <script src="js/loginCheck.js"></script> -->
+  <script src="js/workout.js"></script>
+  
+</body>
+</html>

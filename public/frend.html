@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Run With</title>
+</head>
+<body>
+  <nav>
+      <ul>
+          <li><a href="./home.html"><div><i class="fas fa-home"></i>ホーム</div></a></li>
+          <li><a href="./workout.html"><div><i class="fas fa-running"></i>走る</div></a></li>
+          <li class="now"><a href="./frend.html"><div><i class="fas fa-user-friends"></i>友達</div></a></li>
+          <li><a href="./search.html"><div><i class="fas fa-search-plus"></i>探す</div></a></li>
+      </ul>
+  </nav>
+  <div class="message-sender">
+      <input type="text">
+      <button>送信</button>
+  </div>
+  <header>
+    <h1>Run With</h1>
+  </header>
+  <main class="frend">
+      <div class="non-chat-list">まだ、メッセージを交換した友達はいません。新しい友達を探しましょう。</div>
+      <div class="chat-list">
+          
+      </div>
+      <div class="message-list"></div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/frend.js"></script>
+</body>
+</html>

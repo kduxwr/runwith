@@ -1,0 +1,568 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0;
+  width: 375px;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100000000000000;
+  background: #333;
+  border-top: 1px solid #999;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  width: 25%;
+}
+
+nav li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li div{
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+}
+
+nav li:hover {
+  background: #999;
+}
+
+nav li i {
+  font-size: 32px;
+  padding-bottom: 4px;
+}
+
+nav li.now div{
+  color: rgb(62,153,245);
+}
+
+nav li.now div i {
+  color: rgb(62,153,245);
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 16px;
+    color: white;
+    font-size: 32px;
+}
+
+/* ーーー　トップ　ーーー */
+main.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-msg1 {
+  margin: 8px 0;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/top1.jpg');
+  background-size: cover;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+.top-msg2 {
+  padding: 36px 24px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fdfdfd;
+}
+.top-msg3 {
+  padding-bottom: 24px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF8C00;
+  background: linear-gradient(to right, #40E0D0, #FF8C00 40%, #FF0080);
+  background: -webkit-linear-gradient(to right, #40E0D0, #FF8C00 40%, #FF0080);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(128,128,128,0);
+}
+.login-button {
+  width: 216px;
+  height: 48px;
+  background: #4285f4;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
+.top-msg4 {
+  margin-top: 48px;
+  height: 240px;
+  width: 100%;
+}
+.top-msg4 img {
+  height: 240px;
+  width: 100%;
+}
+
+footer.top {
+  padding: 16px 0;
+  background: #000;
+}
+footer.top p {
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+/* ーーー　ホーム　ーーー */
+.workout-child {
+  color: white;
+  padding: 8px 0;
+  border-top: 1px solid #ccc;
+}
+.workout-child .date {
+  font-size: 24px;
+  width: 90%;
+  margin: 4px 5%;
+}
+.workout-child .map {
+  height: 240px;
+  width: 90%;
+  margin: 0 5%;
+}
+.workout-child .distance
+,.workout-child .time
+,.workout-child .ave {
+  font-size: 16px;
+  width: 90%;
+  margin: 4px 5%;
+}
+
+footer.home {
+  padding: 16px 0;
+  height: 152px;
+  background: #000;
+}
+footer.home p {
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.logout-button {
+  margin-top: 24px;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: greenyellow;
+  color: black;
+  border: 1px solid black;
+}
+
+
+/* ーーー　レジスター　ーーー */
+
+main.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register .title {
+  color: white;
+  font-size: 32px;
+}
+
+.register .name {
+  height: 80px;
+  line-height: 80px;
+  color: white;
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.register .input-name {
+  margin-left: 16px;
+  height: 80px;
+  width: 200px;
+  font-size: 24px;
+  padding-left: 16px;
+}
+
+.user-add-button {
+  width: 156px;
+  height: 80px;
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 4px solid #555;
+  background: greenyellow;
+}
+
+
+
+/* ーーー　ワークアウト　ーーー */
+
+.start {
+    padding: 16px 24px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.start p {
+    padding: 4px;
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.start img {
+    height: 240px;
+}
+
+.countdown {
+    padding: 16px 24px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: white;
+}
+
+.control {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control button {
+    width: 156px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 4px solid #555;
+}
+
+.start-button {
+    background: greenyellow;
+}
+
+.pause-button,
+.restart-button {
+    background: yellow;
+}
+
+.end-button {
+    background: orangered;
+}
+
+.workinput-button {
+  margin-left: auto; 
+  width: 96px;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+.dummy-button {
+  margin-right: auto;
+  visibility: hidden;
+  width: 96px;
+}
+.info {
+    padding: 16px 24px;
+    height: 320px;
+}
+
+.info .countup {
+    font-size: 72px;
+    color: white;
+}
+
+.info .distance {
+    padding: 0 8px;
+    font-size: 40px;
+    color: yellow;
+}
+
+.lat,.lng,.speed {
+    font-size: 32px;
+    color: white;
+}
+
+.workresult .msg {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.workresult .map {
+  height: 240px;
+  margin: 16px 5%;
+}
+
+.workresult .record {
+  color: white;
+  padding-top: 8px;
+}
+
+.workresult .record p{
+  margin: 8px 24px;
+}
+
+.workresult .record p span:nth-child(1) {
+  font-size: 16px;
+  padding-right: 24px;
+  line-height: 32px;
+}
+
+.workresult .record p span:nth-child(2) {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+/* ーーー　ワークインプット ーーー　*/
+
+.workinput 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workinput .map {
+  position: relative;
+  height: 240px;
+  margin: 16px 5%;
+}
+
+.workinput .map:after {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "+";
+  text-align: center;
+  line-height: 64px;
+  font-size: 64px;
+  font-weight: lighter;
+  color: black;
+}
+
+.workinput .record {
+  
+  padding: 8px 40px;
+  color: white;
+  font-size: 20px;
+}
+
+.workinput input {
+  height: 40px;
+}
+
+.workinput p span:first-child {
+  padding-right: 20px;
+}
+
+.workinput input.input-distance {
+  width: 80px;
+}
+
+.workinput input.input-sec
+,.workinput input.input-min {
+  width: 40px;
+}
+
+.workinput-exe-button {
+  width: 120px;
+  height: 80px;
+  border: 4px solid black;
+  border-radius: 40px;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  background: yellowgreen;
+  margin-bottom: 120px;
+}
+
+.workinput-exe-button:hover {
+  background: green;
+}
+
+.workinput-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  color: white;
+  font-size: 24px;
+}
+
+/* ーーー　フレンド　ーーー */
+
+.non-chat-list {
+  color: white;
+  font-size: 24px;
+  padding: 16px;
+}
+
+.chat-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  line-height: 64px;
+  color: white;
+  font-size: 24px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-child button {
+  height: 40px;
+  width: 152px;
+  margin: 7px 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: yellowgreen;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.message-list {
+  padding-bottom: 160px;
+}
+
+.message-child {
+  padding: 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: black;
+  margin: 8px 0;
+}
+
+.message-child.mine {
+  background: yellowgreen;
+  text-align: right;
+}
+
+.message-child.other {
+  background: #ccc;
+  text-align: left;
+}
+
+.message-sender {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 0;
+  position: fixed;
+  bottom: 64px;
+  right: 0;
+  background: #555;
+}
+
+.message-sender input {
+  padding: 8px;
+  width: 240px;
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+.message-sender button {
+  padding: 2px 8px;
+  font-size: 24px;
+}
+
+/* ーーー　サーチ　ーーー */
+
+.non-search-list {
+  color: white;
+  font-size: 24px;
+  padding: 16px;
+}
+
+.ex-search-list {
+  color: white;
+  font-size: 24px;
+  padding: 16px;
+}
+
+.search-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  line-height: 64px;
+  color: white;
+  font-size: 24px;
+  border-top: 1px solid #ccc;
+}
+
+.search-child button {
+  height: 40px;
+  width: 152px;
+  margin: 7px 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: yellowgreen;
+  font-size: 16px;
+  font-weight: bold;
+}
